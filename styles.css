@@ -19,7 +19,7 @@ h1 {
     line-height: 52px;
     text-align: center;
     color: #5D5D7D;
-    margin: 5.5vh auto;
+    margin: 7.5vh auto 5vh;
 }
 
 h1,button,a{
@@ -34,7 +34,7 @@ p {
     color: #5D5D7D;
     mix-blend-mode: normal;
     opacity: 0.6;
-    margin: 7vw 5.5vw;
+    margin: 10vw 5.5vw;
 }
 
 #sct-upleft{
@@ -57,13 +57,12 @@ header {
 }
 
 button {
-    font-size: 24px;
-    line-height: 36px;
+    font-size:3.5vh;
+    height: 7vh;
+    width: 80vw;
     text-align: center;
     color: #FFFFFF;
-    height: 62px;
-    width: 269px;
-    border-radius: 20px;
+    border-radius: 40px;
     background: #9499EA;
     margin: 0 auto 0;
     display: block;
@@ -112,6 +111,5 @@ img {
 @media screen and (orientation:landscape){
 
 }
-
 
 /* desktop */
