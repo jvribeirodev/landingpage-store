@@ -1,3 +1,5 @@
+/* General Settings */
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 * {
@@ -10,31 +12,6 @@
 html {
     width: 100%;
     height: 100%;
-}
-
-
-h1 {
-    font-weight: 400;
-    font-size: 9vw;
-    line-height: 52px;
-    text-align: center;
-    color: #5D5D7D;
-    margin: 7.5vh auto 5vh;
-}
-
-h1,button,a{
-    text-transform: capitalize;
-}
-
-p {
-    font-weight: 400;
-    font-size: 5vw;
-    line-height: 6vw;
-    text-align: center;
-    color: #5D5D7D;
-    mix-blend-mode: normal;
-    opacity: 0.6;
-    margin: 10vw 5.5vw;
 }
 
 #sct-upleft{
@@ -52,12 +29,40 @@ p {
     width: 100%;
 }
 
+
+
+h1,button,a{
+    text-transform: capitalize;
+}
+
+/* cellphone portrait */
+
 header {
     display: none;
 }
 
+h1 {
+    font-weight: 400;
+    font-size: 9vw;
+    line-height: 52px;
+    text-align: center;
+    color: #5D5D7D;
+    margin: 7.5vh auto 5vh;
+}
+
+p {
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 6vw;
+    text-align: center;
+    color: #5D5D7D;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin: 10vw 5.5vw;
+}
+
 button {
-    font-size:3.5vh;
+    font-size:5.5vw;
     height: 7vh;
     width: 80vw;
     text-align: center;
@@ -106,10 +111,84 @@ img {
     }
 }
 
+/* tablet portrait */
+
+@media screen and (min-width:500px) and (orientation:portrait){
+    
+    p{
+        margin: 0 10vw 3.5vh;
+    }
+
+    img{
+        top: 3.5vh;
+        width: 35vh;
+        left: 25vw;
+    }
+}
+
 /* tablet landscape */
 
-@media screen and (orientation:landscape){
+@media screen and (min-width:500px) and (orientation:landscape){
+    
+    h1{
+        font-size: 6vh;
+        margin: 2.5vw auto 2.5vh;
+        line-height: 32px;
+    }
 
+    p{
+        font-size: 4.5vh;
+        line-height: 9vh;
+        margin: 0 8vw 3vh;
+    }
+
+    button{
+        font-size: 4.5vh;
+        height: 8vh;
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width:700px) and (orientation:portrait){
+    
+    h1{
+        font-size: 6vh;
+        margin: 10vw auto 2.5vh;
+        line-height: 32px;
+    }
+
+    p{
+        font-size: 3.5vh;
+        line-height: 5vh;
+        margin: 3vh 8vw 3vh;
+    }
+
+    button{
+        font-size: 4.5vh;
+        height: 8vh;
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width:700px) and (orientation:landscape){
+    
+    h1{
+        font-size: 6vh;
+        margin: 5.5vw auto 2.5vh;
+        line-height: 32px;
+    }
+
+    p{
+        font-size: 4.5vh;
+        line-height: 7vh;
+        margin: 0 8vw 3vh;
+    }
+
+    button{
+        font-size: 4.5vh;
+        height: 8vh;
+        width: 50vw;
+    }
 }
 
 /* desktop */
